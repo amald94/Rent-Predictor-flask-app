@@ -8,6 +8,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{{url_for('static',filename="js/region.js")}}"></script>
     </head>
     <div>
         <div class="wrapper">
@@ -20,12 +21,109 @@
                                 <p class="title-container__subtitle">ML based House Rent Predictor in GTA,Canada</p>
                             </div>
                         </div>
-                        <div class="col-md-7 form-container">
-                            <h1>hiii</h1>
+                        <div class="col-md-7 col-xs-12 form-container">
+                            <form>
+                                <!-- First 3-->
+                                <div>
+                                <div class="col-md-4 col-xs-12">
+                                <h3 class="menu-heading">Unit Type</h3>
+                                <select class="mdb-select md-form">
+                                        <option value="" disabled selected>Choose one</option>                                          
+                                        <option value="0">Apartment</option>
+                                        <option value="1">Basement</option>
+                                        <option value="2">Condo</option>
+                                        <option value="3">Duplex/Triplex</option>
+                                        <option value="4">House</option>
+                                        <option value="5">Townhouse</option>
+                                </select></div>
+
+                                <div class="col-md-4 col-xs-12">
+                                <h3 class="menu-heading">Bedrooms</h3>
+                                <select class="mdb-select md-form">
+                                        <option value="" disabled selected>Choose one</option>                                          
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                </select></div>
+
+                                <div class="col-md-4 col-xs-12">
+                                        <h3 class="menu-heading">Bathrooms</h3>
+                                        <select class="mdb-select md-form">
+                                                <option value="" disabled selected>Choose one</option>                                          
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Second Row-->
+
+                            <div>
+                                    <div class="col-md-4 col-xs-12">
+                                    <h3 class="menu-heading">Petfriendly</h3>
+                                    <select class="mdb-select md-form">
+                                            <option value="" disabled selected>Choose one</option>                                          
+                                            <option value="0">No</option>
+                                            <option value="1">Yes</option>
+                                    </select></div>
+    
+                                    <div class="col-md-4 col-xs-12">
+                                    <h3 class="menu-heading">Furnished</h3>
+                                    <select class="mdb-select md-form">
+                                            <option value="" disabled selected>Choose one</option>                                          
+                                            <option value="0">No</option>
+                                            <option value="1">Yes</option>
+                                    </select></div>
+    
+                                    <div class="col-md-4 col-xs-12">
+                                            <h3 class="menu-heading">Parking</h3>
+                                            <select class="mdb-select md-form">
+                                                <option value="" disabled selected>Choose one</option>                                          
+                                                <option value="0">No</option>
+                                                <option value="1">Yes</option>
+                                        </select>
+                                    </div>
+                            </div>
+
+                            <!-- Third Row-->
+
+                            <div>
+                                    <div class="col-md-4 col-xs-12">
+                                    <h3 class="menu-heading">Airconditioning</h3>
+                                    <select class="mdb-select md-form">
+                                            <option value="" disabled selected>Choose one</option>                                          
+                                            <option value="0">No</option>
+                                            <option value="1">Yes</option>
+                                    </select></div>
+    
+                                    <div class="col-md-4 col-xs-12">
+                                    <h3 class="menu-heading">Smoking</h3>
+                                    <select class="mdb-select md-form">
+                                            <option value="" disabled selected>Choose one</option>                                          
+                                            <option value="0">No</option>
+                                            <option value="1">Yes</option>
+                                    </select></div>
+    
+                                    <div class="col-md-4 col-xs-12">
+                                            <h3 class="menu-heading">Region</h3>
+                                            <select id="selectRegion" class="mdb-select md-form">
+                                                <option value="" disabled selected>Choose one</option>
+                                        </select>
+                                    </div>
+                            </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <script type="text/javascript" src="{{url_for('static',filename="js/region.js")}}"></script>
+
 </html>

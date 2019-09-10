@@ -6,7 +6,16 @@ h5,
 h6 {
   font-weight: bold;
   margin-bottom: 10px;
-  color: blueviolet;
+  color: white;
+}
+
+.menu-heading{
+    color: white;
+    font-style: italic;
+    font-size: small;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: Merriweather,serif;
 }
 
 .wrapper {
@@ -48,4 +57,11 @@ h6 {
     letter-spacing: 1px;
     line-height: 1.5;
     font-family: Merriweather,serif;
+}
+
+.form-container {
+    background-color: #2c3e50;
+    height: 90vh;
+    padding-top: 100px;
+    padding-left: 50px;
 }
