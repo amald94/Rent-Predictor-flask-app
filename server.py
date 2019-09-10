@@ -8,8 +8,7 @@ app = Flask(__name__,template_folder='template')
 # Load the model
 model = pickle.load(open('model.pkl','rb'))
 
-@app.route('/')
-@app.route('/index')
+@app.route('/',methods=['GET','POST'])
 def home():
     return render_template('index.html')
 
@@ -39,7 +38,7 @@ def getrent():
     output = prediction[0]
     output = round(np.expm1(output),2)
     rent = '$ '+str(output)
-    return jsonify(rent)
+    return render_template('rent.html',rent=rent)
 
 if __name__ == '__main__':
-    app.run(port=5003, debug=True)
+    app.run(port=5009, debug=True)
