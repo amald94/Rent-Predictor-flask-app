@@ -24,12 +24,12 @@
                             </div>
                         </div>
                         <div class="col-md-7 col-xs-12 form-container">
-                            <form>
+                            <form method=POST action="{{ url_for('getrent') }}">
                                 <!-- First 3-->
                                 <div class="formX">
                                 <div class="col-md-4 col-xs-12">
                                 <h3 class="menu-heading">Unit Type</h3>
-                                <select id="unit-dropdown" class="mdb-select md-form">
+                                <select id="unit-dropdown" name="unitSelected" class="mdb-select md-form">
                                         <option value="" disabled selected>Choose one</option>                                          
                                         <option value="0">Apartment</option>
                                         <option value="1">Basement</option>
@@ -41,7 +41,7 @@
 
                                 <div class="col-md-4 col-xs-12">
                                 <h3 class="menu-heading">Bedrooms</h3>
-                                <select id="bed-dropdown" class="mdb-select md-form">
+                                <select id="bed-dropdown" name="bedSelected" class="mdb-select md-form">
                                         <option value="" disabled selected>Choose one</option>                                          
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -52,7 +52,7 @@
 
                                 <div class="col-md-4 col-xs-12">
                                     <h3 class="menu-heading">Bathrooms</h3>
-                                    <select id="bath-dropdown" class="mdb-select md-form">
+                                    <select id="bath-dropdown" name="bathSelected" class="mdb-select md-form">
                                         <option value="" disabled selected>Choose one</option>                                          
                                         <option value="1">1</option>
                                         <option value="2">2</option>
@@ -67,7 +67,7 @@
                             <div class="formX">
                                     <div class="col-md-4 col-xs-12">
                                     <h3 class="menu-heading">Petfriendly</h3>
-                                    <select id="pet-dropdown" class="mdb-select md-form">
+                                    <select id="pet-dropdown" name="petSelected" class="mdb-select md-form">
                                             <option value="" disabled selected>Choose one</option>                                          
                                             <option value="0">No</option>
                                             <option value="1">Yes</option>
@@ -75,7 +75,7 @@
     
                                     <div class="col-md-4 col-xs-12">
                                     <h3 class="menu-heading">Furnished</h3>
-                                    <select id="fur-dropdown" class="mdb-select md-form">
+                                    <select id="fur-dropdown" name="furSelected" class="mdb-select md-form">
                                             <option value="" disabled selected>Choose one</option>                                          
                                             <option value="0">No</option>
                                             <option value="1">Yes</option>
@@ -83,7 +83,7 @@
     
                                     <div class="col-md-4 col-xs-12">
                                             <h3 class="menu-heading">Parking</h3>
-                                            <select id="par-dropdown" class="mdb-select md-form">
+                                            <select id="par-dropdown" name="parSelected" class="mdb-select md-form">
                                                 <option value="" disabled selected>Choose one</option>                                          
                                                 <option value="0">No</option>
                                                 <option value="1">Yes</option>
@@ -96,7 +96,7 @@
                             <div class="formX">
                                     <div class="col-md-4 col-xs-12">
                                     <h3 class="menu-heading">Airconditioning</h3>
-                                    <select id="air-dropdown" class="mdb-select md-form">
+                                    <select id="air-dropdown" name="airSelected" class="mdb-select md-form">
                                             <option value="" disabled selected>Choose one</option>                                          
                                             <option value="0">No</option>
                                             <option value="1">Yes</option>
@@ -104,7 +104,7 @@
     
                                     <div class="col-md-4 col-xs-12">
                                     <h3 class="menu-heading">Smoking</h3>
-                                    <select id="smo-dropdown" class="mdb-select md-form">
+                                    <select id="smo-dropdown" name="smoSelected"  class="mdb-select md-form">
                                             <option value="" disabled selected>Choose one</option>                                          
                                             <option value="0">No</option>
                                             <option value="1">Yes</option>
@@ -112,14 +112,14 @@
     
                                     <div class="col-md-4 col-xs-12">
                                             <h3 class="menu-heading">Region</h3>
-                                            <select id="selectRegion" class="mdb-select md-form">
+                                            <select id="selectRegion" name="regSelected" class="mdb-select md-form">
                                                 <option value="" disabled selected>Choose one</option>
                                         </select>
                                     </div>
                             </div>
                             <div class="col-md-12 text-center">
                                 <div class="pedict_btn">
-                                <button type="button" type="submit" class="go-btn btn btn-primary btn-rounded btn-lg">Predict Now</button>
+                                <button type="submit" class="go-btn btn btn-primary btn-rounded btn-lg">Predict Now</button>
                             </div>
                             </div>
                             </form>
