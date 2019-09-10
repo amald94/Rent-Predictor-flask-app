@@ -40,7 +40,7 @@ var options = {'barrie': 0,
 
 
   Object.entries(options).forEach(([key, value]) => {
-    console.log(key, value);
+    //console.log(key, value);
     var el = document.createElement("option");
     el.textContent = key;
     el.value = value;
