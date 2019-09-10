@@ -18,6 +18,10 @@ h6 {
     font-family: Merriweather,serif;
 }
 
+.pedict_btn{
+    margin: 80px;
+}
+
 .wrapper {
     background: linear-gradient(90deg,#e67e22,#e74c3c);
     height: 100vh;
@@ -42,6 +46,13 @@ h6 {
     justify-content: center;
     text-align: center;
     color: #000;
+}
+
+.formX{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .title-container__title {
