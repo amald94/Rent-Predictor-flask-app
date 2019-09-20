@@ -1,5 +1,3 @@
-const city = ['barrie','cornwall','norfolk','thunder']
-const rent = [154,255,266,555]
 var pluginArrayArg = new Array();
 for (var i = 0; i < cities.length; ++i) {
     if(predictedRent > rents[i]){
