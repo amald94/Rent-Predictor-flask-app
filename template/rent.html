@@ -1,8 +1,10 @@
 <html>
     <head>
-        <title>Rent Prediction</title>
+        <meta charset="utf-8">
+        <title>Rent Predictor</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
         <link href={{url_for('static',filename="css/normalize.css")}} rel="stylesheet" type="text/css">
-        <link href={{url_for('static',filename="css/style.css")}} rel="stylesheet" type="text/css">
+        <link href={{url_for('static',filename="css/newSTyle.css")}} rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -10,9 +12,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="{{url_for('static',filename="js/region.js")}}"></script>
         <script type="text/javascript" src="{{url_for('static',filename="js/requestRent.js")}}"></script>
-
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        <script type="text/javascript">
+            var rents = {{ rents|tojson }}
+            var cities = {{ cities|tojson }}
+            var predictedRent = {{ predicted|tojson }}
+        </script>
     </head>
-    <div>
+
+    <body>
+
         <div class="wrapper">
             <div class="main">
                 <div class="container">
@@ -23,24 +32,37 @@
                                 <p class="title-container__subtitle">ML based House Rent Predictor in Ontario,Canada</p>
                             </div>
                         </div>
+
                         <div class="col-md-7 col-xs-12 form-container">
                             <form method=POST action="{{ url_for('home') }}">
-                                <div class="formC">
-                                    <div class="col-md-12 col-xs-12">
-                                        <div>
-                                            <h1 style="color: wheat;margin-bottom: 20px;margin-top: 150px;">{{ rent }}</h1>
-                                            <button type="submit" class="go-btn btn btn-primary btn-rounded btn-lg">Go Back</button>
+                                    <div class="form-bg">
+                                        <div class="col-md-12 col-xs-12">
+                                            <div>
+                                                <h1 class="rentValue">{{ rent }}</h1>
+                                                <button type="submit" class="go-btn btn btn-primary btn-rounded btn-lg">Go Back</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                             </form>
-
                         </div>
                     </div>
+
+                    <!--Predicted cities-->
+                    <div class="row">
+                        <div id="chartContainer" class="col-md-12 col-xs-12 price-graph">
+
+                        </div>
+                </div>
+
                 </div>
             </div>
         </div>
-    </div>
+
+
+    </body>
+
+    <script type="text/javascript" src="{{url_for('static',filename="js/barchart.js")}}">
+    </script>
 
     <script type="text/javascript" src="{{url_for('static',filename="js/region.js")}}"></script>
     <script type="text/javascript" src="{{url_for('static',filename="js/requestRent.js")}}"></script>

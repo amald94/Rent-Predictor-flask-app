@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(90deg,#e67e22,#e74c3c);
+}
+
+.title-container {
+    height: 70vh;
+    background: white;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 13px 40px -13px rgba(0,0,0,.75);
+    margin-top: 100px;
+}
+
+.form-container {
+    height: 70vh;
+    background: #2c3e50;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 13px 40px -13px rgba(0,0,0,.75);
+    margin-top: 100px;
+}
+
+
+.title-container__title {
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    font-family: Roboto Slab,serif;
+}
+
+.title-container__subtitle {
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: Merriweather,serif;
+}
+
+.form-bg{
+    display: flex;
+    margin-top: 15px;
+}
+
+.menu-heading{
+    color: white;
+    font-style: italic;
+    font-size: small;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-family: Merriweather,serif;
+}
+
+.pedict_btn{
+
+    margin-top: 25px;
+}
+
+.md-form{
+    color: black;
+}
+
+.rentValue{
+
+    color: wheat;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+}
+
+.price-graph{
+    margin-bottom: 20px;
+    height: 145vh;
+    background: white;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    box-shadow: 0 13px 40px -13px rgba(0,0,0,.75);
+    margin-top: 20px;
+    margin-right: 0px;
+    padding: 30px;
+}
