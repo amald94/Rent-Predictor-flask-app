@@ -130,12 +130,10 @@
 
                     <div class="col-md-12 text-center">
                         <div class="pedict_btn">
-                        <button type="submit" class="go-btn btn btn-primary btn-rounded btn-lg">Predict Now</button>
+                        <button id="mySubmit" type="submit" class="go-btn btn btn-primary btn-rounded btn-lg" onclick="myFunction()">Predict Now</button>
                     </div>
                                     
-                                </form>
-
-
+                        </form>
 
                             </div>
                         </div>
@@ -146,6 +144,32 @@
         
 
     </body>
+
+    <script>
+        function myFunction() {
+
+        var unit =$("#unit-dropdown :selected").text();
+        var bed =$("#bed-dropdown :selected").text();
+        var bath =$("#bath-dropdown :selected").text();
+        var pet =$("#pet-dropdown :selected").text();
+        var fur =$("#fur-dropdown :selected").text();
+        var par =$("#par-dropdown :selected").text();
+        var air =$("#air-dropdown :selected").text();
+        var smo =$("#smo-dropdown :selected").text();
+        var region =$("#selectRegion :selected").text();
+        localStorage.setItem("unit", unit);
+        localStorage.setItem("bed", bed);
+        localStorage.setItem("bath", bath);
+        localStorage.setItem("pet", pet);
+        localStorage.setItem("fur", fur);
+        localStorage.setItem("par", par);
+        localStorage.setItem("air", air);
+        localStorage.setItem("smo", smo);
+        localStorage.setItem("region", region);
+        }
+
+
+    </script>
 
     <script type="text/javascript" src="{{url_for('static',filename="js/region.js")}}"></script>
     <script type="text/javascript" src="{{url_for('static',filename="js/requestRent.js")}}"></script>

@@ -89,3 +89,31 @@ body{
     margin-right: 0px;
     padding: 30px;
 }
+
+.features{
+    display: flex;
+}
+
+.features-list{
+    padding: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+
+  .tableData{
+
+    text-align: left;
+    padding: 8px;
+    color: white;
+  }
+
+  }

@@ -38,6 +38,34 @@
                                     <div class="form-bg">
                                         <div class="col-md-12 col-xs-12">
                                             <div>
+
+                                                    <div class="row features">
+                            
+                                                            <p class="features-list">unit type : </p>
+                                                            <p  id="unit" class="features-list" >xx</p>
+                                                            <p class="features-list">Bedrooms : </p>
+                                                            <p  id="bed" class="features-list" >xx</p>
+                                                            <p class="features-list">Bathrooms : </p>
+                                                            <p  id="bath" class="features-list" >xx</p>
+                                                    </div>
+                                                        <div class="row features">
+                                                                <p class="features-list">Pet Friendly : </p>
+                                                                <p  id="pet" class="features-list" >xx</p>
+                                                                <p class="features-list">Furnished : </p>
+                                                                <p  id="fur" class="features-list" >xx</p>
+                                                                <p class="features-list">Parking : </p>
+                                                                <p  id="par" class="features-list" >xx</p>
+                                                        </div>
+                                                        <div class="row features">
+                                                                <p class="features-list">Airconditioning : </p>
+                                                                <p  id="air" class="features-list" >xx</p>
+                                                                <p class="features-list">Smoking : </p>
+                                                                <p  id="smo" class="features-list" >xx</p>
+                                                                <p class="features-list">Region : </p>
+                                                                <p  id="region" class="features-list" >xx</p>
+                                                        </div>
+
+
                                                 <h1 class="rentValue">{{ rent }}</h1>
                                                 <button type="submit" class="go-btn btn btn-primary btn-rounded btn-lg">Go Back</button>
                                             </div>
@@ -60,6 +88,29 @@
 
 
     </body>
+
+
+    <script>
+        var unit=localStorage.getItem("unit");
+        document.getElementById('unit').innerHTML = unit
+        var bed=localStorage.getItem("bed");
+        document.getElementById('bed').innerText = bed
+        var bath=localStorage.getItem("bath");
+        document.getElementById('bath').innerText = bath
+        var pet=localStorage.getItem("pet");
+        document.getElementById('pet').innerText = pet
+        var fur=localStorage.getItem("fur");
+        document.getElementById('fur').innerText = fur
+        var par=localStorage.getItem("par");
+        document.getElementById('par').innerText = par
+        var air=localStorage.getItem("air");
+        document.getElementById('air').innerText = air
+        var smo=localStorage.getItem("smo");
+        document.getElementById('smo').innerText = smo
+        var region=localStorage.getItem("region");
+        document.getElementById('region').innerText = region
+
+    </script>  
 
     <script type="text/javascript" src="{{url_for('static',filename="js/barchart.js")}}">
     </script>

@@ -36,7 +36,7 @@ window.onload = function () {
         axisY2:{
             interlacedColor: "rgba(1,77,101,.2)",
             gridColor: "rgba(1,77,101,.1)",
-            title: "Expected rent across other major cities in Ontario",
+            title: "Expected rent across other cities in Ontario - ( Cheaper than selected region )",
             labelFontSize: 20,
             titleFontSize: 25
         },
